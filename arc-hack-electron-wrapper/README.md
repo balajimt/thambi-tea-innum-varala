@@ -3,7 +3,7 @@
 ## To Use
 ```bash
 # Clone this repository
-git clone {GIT_URL}
+git clone https://github.com/balajimt/thambi-tea-innum-varala/tree/main/arc-hack-electron-wrapper
 # Go into the repository
 cd electron-wrapper
 # Install dependencies
