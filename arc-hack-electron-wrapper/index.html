@@ -5,7 +5,18 @@
     <title>ArcHack - Covid Edition</title>
     <script>
       // You can also require other files to run in this process
-      require('./renderer.js')
+      var path = require('path');
+      var about = path.join(__dirname, '/about.html');
+      function  loadGithubUrl(){
+        <!-- Talk is cheap. Show me the code :D-->
+        const gitUrl = "https://github.com/balajimt/thambi-tea-innum-varala"
+        view.loadURL(gitUrl);
+      }
+      function  loadAbout(){
+        <!-- Talk is cheap. Show me the code :D-->
+        const aboutUrl = "file:///"+about
+        view.loadURL(aboutUrl);
+      }
     </script>
     <link rel="stylesheet" href="css/css/font-awesome.css">
     <link rel="stylesheet" href="css/main.css">
@@ -21,7 +32,7 @@
             z-index: 1; /* Stay on top */
             top: 0; /* Stay at the top */
             left: 0;
-            background-color: #a71d2a; /* Black */
+            background-color: #222222; /* Black */
             overflow-x: hidden; /* Disable horizontal scroll */
             padding-top: 20px;
           }
@@ -31,35 +42,34 @@
             padding: 6px 8px 6px 16px;
             text-decoration: none;
             font-size: 25px;
-            color: #20c997;
+            color: #007bff;
             display: block;
           }
 
           /* When you mouse over the navigation links, change their color */
           .navigation a:hover {
-            color: #20c997;
+            color: #ffffff;
           }
           #views {
              margin-left: 50px; /* Same as the width of the sidenav */
              font-size: 28px; /* Increased text to enable scrolling */
              padding: 0px 0px;
            }
-          #fave{float:left;display:block;width:18px;font-size:40px;color:#eee}
+          #fave{float:left;display:block;width:18px;font-size:40px;color:#007bff}
     </style>
   </head>
   <body id="browser">
   <div class="navigation">
-    <a id="fave">
+    <div id="fave">
       <a href="index.html"> <i class="fa fa-home" aria-hidden="true"></i></a>
+      <a onclick="loadGithubUrl();"> <i class="fa fa-github" aria-hidden="true"></i></a>
+      <a onclick="loadAbout();"> <i class="fa fa-hand-grab-o" aria-hidden="true"></i></a>
     </div>
   </div>
       <div id="omnibox">
         <input type="text" id="url" hidden>
       </div>
 
-<!--      <div id="console">-->
-<!--        <i class="fa fa-terminal" aria-hidden="true"></i>-->
-<!--      </div>-->
       <div id="views">
         <webview id="view" class="page" src="landing_page.html" autosize="on"></webview>
       </div>
