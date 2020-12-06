@@ -29,7 +29,7 @@ Authentication is done via Google-sign in.
 
 ### Running the models in collab:
 - Sign in via Google account
-- Run the cells by clicking <img src="doc_images/button.png" alt="collab run button">
+- Run the cells by clicking ▶️ button
 - For Lip Sync, audio and image needs to be provided. Audio source can be youtube links, Custom, or you can use the default clip.
 - For Live Fake, images maybe uploaded otherwise default avatars will be used. Live video stream is captured via webcam.
 
