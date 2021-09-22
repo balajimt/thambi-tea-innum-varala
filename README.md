@@ -1,4 +1,4 @@
-# Arc Hack by Thambi Tea Innum Varala - Covid Special Edition
+# Arc Hack by Thambi Tea Innum Varala - Covid Special Edition (Winner of "Most Creative Hack")
 ## The Why:
 <img src="https://cultofthepartyparrot.com/parrots/hd/confusedparrot.gif" alt="why">\
 Being stuck at homes and not being able to meet people have been a bummer. Seeing each other helps in bonding as a team and developing connections, even if its via video.
